@@ -1,0 +1,22 @@
+{
+  "name": "petstore",
+  "version": "1.0.0",
+  "description": "API_Automation_Petstore",
+  "license": "ISC",
+  "author": "Mohamad Abdul Reza Febrianto",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
