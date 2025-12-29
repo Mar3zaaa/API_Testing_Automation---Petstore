@@ -7,7 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api:run": "mocha API.spec.js --reporter mochawesome --reporter-options reportDir=api-results,reportFilename=api-report,quiet=true",
+    "report:merge": "mochawesome-merge api-results/*.json -o api-results/report.json",
+    "report:generate": "marge api-results/report.json --reportDir api-report --inline",
+    "full:report": "npm run api:run && npm run report:merge && npm run report:generate"
   },
   "dependencies": {
     "chai": "^6.2.2",
